@@ -1,13 +1,15 @@
 /* Voilà markdown styling */
 .jp-Cell, .jp-MarkdownCell {
     max-width: 70vw !important;
-    margin: auto !important;
+    margin: 0 auto !important;
+    text-align: justify !important;
 }
 
 .jp-MarkdownOutput {
     font-size: 18px !important;
     max-width: 900px !important;
     margin: 0 auto !important;
+    text-align: justify !important;
 }
 
 /* Additional markdown elements styling */
