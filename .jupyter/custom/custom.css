@@ -1,0 +1,18 @@
+.jp-RenderedMarkdown {
+    font-size: 16px !important;
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    padding: 0 2em !important;
+}
+
+.jp-RenderedMarkdown h1 {
+    font-size: 24px !important;
+}
+
+.jp-RenderedMarkdown h2 {
+    font-size: 20px !important;
+}
+
+.jp-RenderedMarkdown p {
+    line-height: 1.5 !important;
+}
