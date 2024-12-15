@@ -1,7 +1,7 @@
 /* Voilà markdown styling */
 .jp-Cell, .jp-MarkdownCell {
-    max-width: 70vw;
-    margin: auto;
+    max-width: 70vw !important;
+    margin: auto !important;
 }
 
 .jp-MarkdownOutput {
