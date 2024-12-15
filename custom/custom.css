@@ -1,18 +1,19 @@
-.jp-RenderedMarkdown {
+/* Voilà markdown styling */
+.jp-MarkdownOutput {
     font-size: 16px !important;
     max-width: 900px !important;
     margin: 0 auto !important;
-    padding: 0 2em !important;
 }
 
-.jp-RenderedMarkdown h1 {
+/* Additional markdown elements styling */
+.jp-MarkdownOutput h1 {
     font-size: 24px !important;
 }
 
-.jp-RenderedMarkdown h2 {
+.jp-MarkdownOutput h2 {
     font-size: 20px !important;
 }
 
-.jp-RenderedMarkdown p {
+.jp-MarkdownOutput p {
     line-height: 1.5 !important;
 }
