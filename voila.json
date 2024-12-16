@@ -1,5 +1,6 @@
 {
     "template": "default",
     "theme": "dark",
+    "show_code": true,
     "strip_sources": false
   }
