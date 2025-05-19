@@ -15,7 +15,7 @@
 /* Additional markdown elements styling */
 .jp-MarkdownOutput h1 {
     font-size: 2rem !important;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .jp-MarkdownOutput h2 {
@@ -24,8 +24,8 @@
 
 .jp-MarkdownOutput p {
     line-height: 1.5 !important;
-    font-size: 1.3rem!important;
-    background-color: blueviolet !important;
+    font-size: 1.1rem!important;
+    /* background-color: blueviolet !important; */
 }
 
 .input_area {
@@ -33,6 +33,6 @@
   overflow-y: auto !important;
 }
 
-h2 {
+/* h2 {
     background-color: blueviolet;
-}
+} */

@@ -85,87 +85,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<div id="cell-0" class="cell" data-execution_count="129">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> HTML</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>HTML(<span class="st">'''&lt;style&gt;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="st">.jp-Cell, .jp-MarkdownCell {</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="st">    max-width: 70vw !important;</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="st">    margin: 3px auto !important;</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="st">    /* text-align: justify !important; */</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="st">}</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="st">.jp-MarkdownOutput {</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="st">    font-size: 18px !important;</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="st">    max-width: 900px !important;</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="st">    margin: 0 auto !important;</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="st">    /* text-align: justify !important; */</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="st">}</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="st">/* Additional markdown elements styling */</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="st">.jp-MarkdownOutput h1 {</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="st">    font-size: 2rem !important;</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="st">    background-color: red;</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="st">}</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="st">.jp-MarkdownOutput h2 {</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="st">    font-size: 1.5rem !important;</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="st">}</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="st">.jp-MarkdownOutput p {</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="st">    line-height: 1.5 !important;</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="st">    font-size: 1.3rem!important;</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="st">    background-color: blueviolet !important;</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="st">}</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="st">.input_area {</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="st">  max-height: 300px !important;</span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="st">  overflow-y: auto !important;</span></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="st">}</span></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="st">h2 {</span></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="st">    background-color: blueviolet;</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="st">} &lt;/style&gt;'''</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="129">
-<style>
-.jp-Cell, .jp-MarkdownCell {
-    max-width: 70vw !important;
-    margin: 3px auto !important;
-    /* text-align: justify !important; */
-}
-
-.jp-MarkdownOutput {
-    font-size: 18px !important;
-    max-width: 900px !important;
-    margin: 0 auto !important;
-    /* text-align: justify !important; */
-}
-
-/* Additional markdown elements styling */
-.jp-MarkdownOutput h1 {
-    font-size: 2rem !important;
-    background-color: red;
-}
-
-.jp-MarkdownOutput h2 {
-    font-size: 1.5rem !important;
-}
-
-.jp-MarkdownOutput p {
-    line-height: 1.5 !important;
-    font-size: 1.3rem!important;
-    background-color: blueviolet !important;
-}
-
-.input_area {
-  max-height: 300px !important;
-  overflow-y: auto !important;
-}
-
-h2 {
-    background-color: blueviolet;
-} </style>
-</div>
-</div>
 <img style="float:right;display:inline;z-index:0;margin-right:5rem" src="./UOF-logo.png" alt-text="Logo de l'UOF, université innovante">
 <h1 style="margin:auto;max-width:50rem;text-align:center">
 Ligne de temps générative <br> des technologies numériques
@@ -204,22 +123,22 @@ ChatGPT"></p>
 <h4 class="anchored" data-anchor-id="lancement-de-linterface-humain-cerveau-sans-fil-de-la-compagnie-neuralink-et-première-implantation-dans-un-cerveau-de-porc-en-août-2020">Lancement de l’interface humain-cerveau sans fil de la compagnie Neuralink et première implantation dans un cerveau de porc en août 2020;</h4>
 <p>Neuralink, une des compagnies d’Elon Musk, annonce au mois d’août 2020 qu’elle a implanté un dispositif servant d’interface dans le cerveau de plusieurs porcs. Après avoir fait une recherche sommaire sur cet événement en ligne, je constate que la nouvelle semble avoir été abondamment relayée. Elle a été soulignée dans les milieux des hautes technologies, de l’ingénierie, et de la médecine, entre autres. J’ai choisi 👉 <a href="https://www.scientificamerican.com/article/elon-musks-pig-brain-implant-is-still-a-long-way-from-solving-paralysis/">ce commentaire publié dans la revue Scientific American</a> pour en traiter. Ce commentaire nous renseigne sur les éléments les plus importants de la démonstration de prouesse technologique, tout en soulignant qu’il s’agissait d’une démonstration visant, selon les dires de Musk, à attirer des talents.</p>
 <p>J’ai choisi cette date parce que, bien que cela ne semble pas évident au premier regard, je vois des liens forts entre les développements les plus récents des interfaces humains-cerveau et la montée en croissance très rapide d’agents conversationnels. Je pense que, dans un avenir pas si lointain, il sera possible d’implanter des puces microscopiques capables de relier des agents conversationnels avec des cerveaux. Des prototypes de micropuces capables de connecter des cerveaux humains à Internet et de transmettre de l’information dans les deux sens, directement à ces cerveaux, sont désormais possibles. D’ailleurs, elles existent déjà sous la forme d’une démonstration initiale, également très médiatisée, capable de transmettre de l’information sans fil directement. C’est ce qu’a fait la compagnie d’Elon Musk 👉 <a href="https://www.reuters.com/technology/neuralink-implants-brain-chip-first-human-musk-says-2024-01-29/">le 29 janvier dernier</a> avec de premiers essais cliniques d’implantation sur des êtres humains.</p>
-<div id="cell-10" class="cell" data-execution_count="85">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Entrons les principaux détails de cet événement sous forme de</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># dictionnaire dans une variable: « date_1 ».</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Le dictionnaire se compose d'un événement qui servira d'étiquette</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># (label), d'une date de début (pas besoin de date de fin dans ce</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># cas-ci), ainsi que de détails. Les détails sont sous forme de chaîne</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># de caractères et contiennent un hyperlien formatté en html. Cet</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># hyperlien sera cliquable lorsque le curseur se posera sur l'événement</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># pour en révéler les détails. </span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>date_1 <span class="op">=</span> <span class="bu">dict</span>(</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>        Événement<span class="op">=</span><span class="st">"Annonce de l'implantation d'une puce Neuralink dans un cerveau humain"</span>, </span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>        Début<span class="op">=</span><span class="st">"2024"</span>,</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        Détails<span class="op">=</span><span class="st">"Un premier patient reçoit un implant cérébral Neuralink.&lt;br&gt;&lt;a style='color: #00ffff;' href='https://www.reuters.com/technology/neuralink-implants-brain-chip-first-human-musk-says-2024-01-29/'&gt;→ Lien vers l'article de l'agence Reuters&lt;/a&gt;"</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-9" class="cell" data-execution_count="85">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Entrons les principaux détails de cet événement sous forme de</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># dictionnaire dans une variable: « date_1 ».</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Le dictionnaire se compose d'un événement qui servira d'étiquette</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># (label), d'une date de début (pas besoin de date de fin dans ce</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># cas-ci), ainsi que de détails. Les détails sont sous forme de chaîne</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># de caractères et contiennent un hyperlien formatté en html. Cet</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># hyperlien sera cliquable lorsque le curseur se posera sur l'événement</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># pour en révéler les détails. </span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>date_1 <span class="op">=</span> <span class="bu">dict</span>(</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        Événement<span class="op">=</span><span class="st">"Annonce de l'implantation d'une puce Neuralink dans un cerveau humain"</span>, </span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        Début<span class="op">=</span><span class="st">"2024"</span>,</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        Détails<span class="op">=</span><span class="st">"Un premier patient reçoit un implant cérébral Neuralink.&lt;br&gt;&lt;a style='color: #00ffff;' href='https://www.reuters.com/technology/neuralink-implants-brain-chip-first-human-musk-says-2024-01-29/'&gt;→ Lien vers l'article de l'agence Reuters&lt;/a&gt;"</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Une fois cette date commentée, je suis retournée sur ChatGPT pour continuer mon exploration critique de sources. Et j’ai consulté à nouveau les références cliquables pour me rendre compte qu’elles étaient non seulement en manque de pertinence, mais que le texte généré comme description comportait des erreurs. J’ai relevé la chose auprès du <em>chatbot</em>:</p>
 <p><img src="./Tu_te_trompes.png" alt="capture d'écran où j'indique que
@@ -232,37 +151,37 @@ ChatGPT se trompe" style="margin:auto;max-width:60%;"></p>
 <section id="publication-de-larticle-attention-is-all-you-need-vaswani-et-al.-2017" class="level4">
 <h4 class="anchored">Publication de l’article <em>Attention is all you need</em> (Vaswani et al.&nbsp;2017)</h4>
 <p>J’ai continué mon exploration. De fil en aiguille, j’ai trouvé d’autres références très intéressantes. Dans <a href="https://news.mit.edu/2023/explained-generative-ai-1109">cet article</a> d’Adam Zewe, 2017 apparaît comme une date cruciale pour le développement d’IA génératives et donc, par extension, des agents conversationnels. Cette date correspond à la publication d’un article intitulé «&nbsp;<em>Attention is all you need</em> » par une équipe de chercheur.e.s de l’équipe derrière Google Deepmind. Dans cet article, une nouvelle architecture est proposée pour accélérer radicalement le temps passé à entraîner de grands modèles de langage (Zewe, 2023).</p>
-<div id="cell-13" class="cell" data-execution_count="121">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ajoutons la nouvelle date, toujours sous forme de dictionnaire</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># (notation alternative), dans une nouvelle variable.</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>date_2 <span class="op">=</span> <span class="bu">dict</span>(</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    Événement<span class="op">=</span><span class="st">"Publication de l'article 'Attention is all you need'"</span>,</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    Début<span class="op">=</span><span class="st">"2017"</span>,</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    Détails<span class="op">=</span><span class="st">"Article fondateur sur l'architecture des transformeurs par Vaswani et al.&lt;br&gt;&lt;a style='color: #00ffff;text-align:left;' href='https://doi.org/10.48550/arXiv.1706.03762'&gt;→ Lire l'article original&lt;/a&gt;"</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-12" class="cell" data-execution_count="121">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ajoutons la nouvelle date, toujours sous forme de dictionnaire</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># (notation alternative), dans une nouvelle variable.</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>date_2 <span class="op">=</span> <span class="bu">dict</span>(</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    Événement<span class="op">=</span><span class="st">"Publication de l'article 'Attention is all you need'"</span>,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    Début<span class="op">=</span><span class="st">"2017"</span>,</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    Détails<span class="op">=</span><span class="st">"Article fondateur sur l'architecture des transformeurs par Vaswani et al.&lt;br&gt;&lt;a style='color: #00ffff;text-align:left;' href='https://doi.org/10.48550/arXiv.1706.03762'&gt;→ Lire l'article original&lt;/a&gt;"</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <h4 class="anchored">
 Le programme psychothérapeute ELIZA: 1966
 </h4>
 <p>Je me suis aussi souvenue d’avoir déjà lu sur ELIZA il y a quelques années. Il s’agit d’un des premiers <em>chatbots</em> à avoir été rendu public selon Md. Al-Amin et al.&nbsp;(2024). Conçu par Joseph Weizenbaum en 1966, ELIZA était un programme texte interactif qui simulait une thérapeute avec certaines phrases préprogrammées (Weizembaum, 1966). ELIZA a marqué le développement technique des agents conversationnels : « Son fonctionnement reposait sur la reconnaissance de mots-clés et de schémas pour sélectionner des modèles de réponses prédéterminés. Il analysait le texte saisi par l’utilisateur à la recherche de mots-clés et de schémas reconnus, puis substituait ces mots-clés dans les modèles de réponses correspondants pour générer automatiquement des réponses. » (<em>Ibid</em>, p. 6, traduction via Google Gemini Flash 1.5).</p>
-<div id="cell-16" class="cell" data-execution_count="122">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>date_3 <span class="op">=</span> <span class="bu">dict</span>(</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    Événement<span class="op">=</span><span class="st">"Turing traite du «jeu d'imitation»"</span>,</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    Début<span class="op">=</span><span class="st">"1950"</span>,</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    Détails<span class="op">=</span><span class="st">"Publication de 'Computing Machinery and Intelligence'.&lt;br&gt;&lt;a style='color: #00ffff;' href='https://doi.org/10.1093/mind/LIX.236.433'&gt;→ Consulter l'article original&lt;/a&gt;"</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-15" class="cell" data-execution_count="122">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>date_3 <span class="op">=</span> <span class="bu">dict</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    Événement<span class="op">=</span><span class="st">"Turing traite du «jeu d'imitation»"</span>,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    Début<span class="op">=</span><span class="st">"1950"</span>,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    Détails<span class="op">=</span><span class="st">"Publication de 'Computing Machinery and Intelligence'.&lt;br&gt;&lt;a style='color: #00ffff;' href='https://doi.org/10.1093/mind/LIX.236.433'&gt;→ Consulter l'article original&lt;/a&gt;"</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>ELIZA a d’autant plus piqué ma curiosité lorsque j’ai pris connaissance de son rapport avec le test de Turing. Le concepteur de ce test, Alan Turing, en a formulé les grandes lignes dans un article publié en 1950 dans la revue <em>Mind</em> (Turing, 1950). Plusieurs agents conversationnels, dont ELIZA, ont été à soumis à ce test, souvent avec des résultats ambivalents ou débattus (Orf, 2023).</p>
-<div id="cell-18" class="cell" data-execution_count="123">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Transformons aussi cette publication en dictionnaire et ajoutons-le</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># avec la méthode `loc`, que nous connaissons déjà mieux.</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>date_4 <span class="op">=</span> <span class="bu">dict</span>(</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    Événement<span class="op">=</span><span class="st">"Joseph Weizenbaum lance le programme ELIZA"</span>,</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    Début<span class="op">=</span><span class="st">"1966"</span>,</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    Détails<span class="op">=</span><span class="st">"Premier chatbot simulant un psychothérapeute.&lt;br&gt;&lt;a style='color: #00ffff;' href='https://doi.org/10.48550/arXiv.2402.05122'&gt;→ Article sur l'histoire des &lt;i&gt;chatbots&lt;/i&gt; traitant entre autres d'ELIZA.&lt;/a&gt;"</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-17" class="cell" data-execution_count="123">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Transformons aussi cette publication en dictionnaire et ajoutons-le</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># avec la méthode `loc`, que nous connaissons déjà mieux.</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>date_4 <span class="op">=</span> <span class="bu">dict</span>(</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    Événement<span class="op">=</span><span class="st">"Joseph Weizenbaum lance le programme ELIZA"</span>,</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    Début<span class="op">=</span><span class="st">"1966"</span>,</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    Détails<span class="op">=</span><span class="st">"Premier chatbot simulant un psychothérapeute.&lt;br&gt;&lt;a style='color: #00ffff;' href='https://doi.org/10.48550/arXiv.2402.05122'&gt;→ Article sur l'histoire des &lt;i&gt;chatbots&lt;/i&gt; traitant entre autres d'ELIZA.&lt;/a&gt;"</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>En dernier lieu, pour équilibrer la répartition des événements sur ma ligne, je me suis limité à trouver un événement significatif entre les années 1970 et 1990.</p>
 <p>Cela dit, cette fois, j’ai effectué une recherche en partant des ressources disponibles à la bibliothèque de l’UOF. Sans <em>prompts</em> très précis, rédigés avec beaucoup de soin et à travers de multiples itérations, consulter ChatGPT pour obtenir des sources valides s’avère frustrant. Et tant qu’à passer des heures à taper des instructions à une IA générative, pourquoi ne pas plutôt s’économiser l’effort et aller chercher du côté de ressources spécialisées faites exactement pour le genre d’exercice auquel je me prête ? ChatGPT a confirmé.</p>
@@ -274,155 +193,155 @@ Création de Parry par Kenneth Colby en 1972
 </h4>
 <p>Une petite recherche sur CAIRN info avec les termes «&nbsp;Histoire IA conversationnelle » me permet de trouver une référence très pertinente: la conception de l’agent conversationnel Parry par Kenneth Colby, psychiatre et chercheur à l’Université Stanford. L’auteur de l’article qui en fait mention, Xavier Aimé, note que Parry était un programme « dont l’objet était cette fois de modéliser le comportement d’un sujet atteint de schizophrénie paranoïde » (2017, p.&nbsp;53).</p>
 <p>Voilà, maintenant ajoutons cette dernière date sous forme de dictionnaire à la ligne de temps.</p>
-<div id="cell-21" class="cell" data-execution_count="124">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>date_5 <span class="op">=</span> <span class="bu">dict</span>(</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    Événement<span class="op">=</span><span class="st">"Lancement du robot conversationnel Parry"</span>,</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    Début<span class="op">=</span><span class="st">"1972"</span>,</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    Détails<span class="op">=</span><span class="st">"Chatbot simulant un patient paranoïaque, créé par Kenneth Colby.&lt;br&gt;&lt;a style='color: #00ffff;' href='https://stm.cairn.info/revue-l-information-psychiatrique-2017-1-page-51'&gt;→ Article de Xavier Aimé sur ELIZA et Parry&lt;/a&gt;"</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-20" class="cell" data-execution_count="124">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>date_5 <span class="op">=</span> <span class="bu">dict</span>(</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    Événement<span class="op">=</span><span class="st">"Lancement du robot conversationnel Parry"</span>,</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    Début<span class="op">=</span><span class="st">"1972"</span>,</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    Détails<span class="op">=</span><span class="st">"Chatbot simulant un patient paranoïaque, créé par Kenneth Colby.&lt;br&gt;&lt;a style='color: #00ffff;' href='https://stm.cairn.info/revue-l-information-psychiatrique-2017-1-page-51'&gt;→ Article de Xavier Aimé sur ELIZA et Parry&lt;/a&gt;"</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <h3 class="anchored" data-anchor-id="publication-de-larticle-attention-is-all-you-need-vaswani-et-al.-2017">
 Création de la ligne de temps avec assistance IA
 </h3>
 <p>La ligne de temps suivante a été générée avec la librairie Python de visualisation Plotly ainsi que la librairie « wrap ». Cette dernière assure un retour à la ligne pour une meilleure mise en page des étiquettes.</p>
 <p>ChatGPT 4o et Claude 3.5 Sonnet ont été utilisés pour générer l’essentiel du code, qui a par la suite fait l’objet de maintes révisions et raffinements. La documentation disponible sur le <a href="https://plotly.com/python/">site de Plotly et Dash</a> ainsi que sur le <a href="https://github.com/plotly/plotly.py/issues">référentiel GitHub</a> des librairies s’est révélée très utile à cette fin.</p>
-<div id="cell-24" class="cell" data-execution_count="125">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Notre première ligne sert à l'importation de la librarie Pandas, qui</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># servira à créer les structure de donnée en tableau (DataFrame)</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># nécessaire à notre visualisation.</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Il faut, ensuite, créer un tableau DataFrame contenant l'ensemble</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co"># des dictionnaires que nous avons définis jusqu'à maintenant.</span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.DataFrame([date_1, date_2, date_3, date_4, date_5])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-23" class="cell" data-execution_count="125">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Notre première ligne sert à l'importation de la librarie Pandas, qui</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># servira à créer les structure de donnée en tableau (DataFrame)</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># nécessaire à notre visualisation.</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Il faut, ensuite, créer un tableau DataFrame contenant l'ensemble</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># des dictionnaires que nous avons définis jusqu'à maintenant.</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.DataFrame([date_1, date_2, date_3, date_4, date_5])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-25" class="cell" data-execution_count="126">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Par la suite, importons la librairie Plotly pour concevoir et afficher</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># notre ligne de temps.</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Et importons le module "wrap" pour mieux mettre en forme nos</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co"># étiquettes, notamment pour «&nbsp;enrober » (warp) le texte et ne pas avoir</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co"># de longues lignes. </span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> textwrap <span class="im">import</span> wrap</span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Conversion des dates en format datetime</span></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Ici, nous aurons seulement une date de début.</span></span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Nous n'avons pas besoin des dates de fin.</span></span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'Début'</span>] <span class="op">=</span> pd.to_datetime(data[<span class="st">'Début'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-24" class="cell" data-execution_count="126">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Par la suite, importons la librairie Plotly pour concevoir et afficher</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># notre ligne de temps.</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Et importons le module "wrap" pour mieux mettre en forme nos</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co"># étiquettes, notamment pour «&nbsp;enrober » (warp) le texte et ne pas avoir</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co"># de longues lignes. </span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> textwrap <span class="im">import</span> wrap</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Conversion des dates en format datetime</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Ici, nous aurons seulement une date de début.</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Nous n'avons pas besoin des dates de fin.</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'Début'</span>] <span class="op">=</span> pd.to_datetime(data[<span class="st">'Début'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>De cette manière, les étiquettes vont uniquement montrer la date de l’événement.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="binder_test_files/figure-html/cell-26-1-image.png" class="img-fluid figure-img"></p>
+<p><img src="binder_test_files/figure-html/cell-25-1-image.png" class="img-fluid figure-img"></p>
 <figcaption>image.png</figcaption>
 </figure>
 </div>
-<div id="cell-27" class="cell" data-execution_count="127">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># La ligne suivante trie des données chronologiquement par date, et</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># assigne ce résultat à nouveau à la variable « data ». </span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> data.sort_values(<span class="st">'Début'</span>)</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Enrobons (wrap) le texte des événements afin que la longueur de chaque ligne ne</span></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="co"># dépasse pas </span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co"># plus de 30 caractères.  Nous utilisons la méthode pandas « apply »</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="co"># avec une fonction anonyme (lambda), c'est-à-dire une fonction sans nom</span></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="co"># qui n'a pas besoin d'être invoquée pour être exécutée.</span></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'Événement'</span>] <span class="op">=</span> data[<span class="st">'Événement'</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> x: <span class="st">'&lt;br&gt;'</span>.join(wrap(x, width<span class="op">=</span><span class="dv">30</span>)))</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Création des positions alternées pour les textes</span></span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="co"># De cette manière, les étiquettes ne se chevaucheront pas leurs dates</span></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="co"># sont chronologiquement proches.</span></span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>positions <span class="op">=</span> [<span class="st">'middle right'</span>, <span class="st">'middle left'</span>] <span class="op">*</span> (<span class="bu">len</span>(data) <span class="op">//</span> <span class="dv">2</span> <span class="op">+</span> <span class="dv">1</span>)</span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>positions <span class="op">=</span> positions[:<span class="bu">len</span>(data)]</span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Position opposée pour le hover (si le texte est à droite, le hover sera à gauche et vice versa)</span></span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>hover_alignments <span class="op">=</span> [<span class="st">'left'</span> <span class="cf">if</span> pos <span class="op">==</span> <span class="st">'middle right'</span> <span class="cf">else</span> <span class="st">'right'</span> <span class="cf">for</span> pos <span class="kw">in</span> positions]</span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Créons le graphique avec la fonction Plotly « Figure » </span></span>
-<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> go.Figure()</span>
-<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Ajoutons des points et des étiquettes et ajoutons leurs paramètres</span></span>
-<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a><span class="co"># pour les afficher adéquatement.</span></span>
-<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, row <span class="kw">in</span> <span class="bu">enumerate</span>(data.itertuples()):</span>
-<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>    fig.add_trace(go.Scatter(</span>
-<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>        y<span class="op">=</span>[row.Début],</span>
-<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span>[<span class="dv">0</span>],</span>
-<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a>        mode<span class="op">=</span><span class="st">'markers+text'</span>,</span>
-<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a>        marker<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">12</span>, symbol<span class="op">=</span><span class="st">'circle'</span>),</span>
-<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a>        text<span class="op">=</span>[row.Événement],</span>
-<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a>        textposition<span class="op">=</span>positions[i],</span>
-<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a>        textfont<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">14</span>),</span>
-<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a>        showlegend<span class="op">=</span><span class="va">False</span>,</span>
-<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a>        hovertemplate<span class="op">=</span><span class="st">"%</span><span class="sc">{customdata}</span><span class="st">&lt;br&gt;&lt;b&gt;%{y|%Y}&lt;/b&gt;&lt;extra&gt;&lt;/extra&gt;"</span>,</span>
-<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a>        customdata<span class="op">=</span>[row.Détails],</span>
-<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a>        hoverlabel<span class="op">=</span><span class="bu">dict</span>(</span>
-<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a>            bgcolor<span class="op">=</span><span class="st">'rgba(0,0,0,0.8)'</span>,</span>
-<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a>            align<span class="op">=</span>hover_alignments[i], <span class="co"># Position alternée du hover</span></span>
-<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a>        ),</span>
-<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a>    ))</span>
-<span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a><span class="co"># Traçons la ligne verticale sur laquelle tous les événements seront disposés.</span></span>
-<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a>fig.add_trace(go.Scatter(</span>
-<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>[data[<span class="st">'Début'</span>].<span class="bu">min</span>(), data[<span class="st">'Début'</span>].<span class="bu">max</span>()],</span>
-<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>[<span class="dv">0</span>, <span class="dv">0</span>],</span>
-<span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a>    mode<span class="op">=</span><span class="st">'lines'</span>,</span>
-<span id="cb9-49"><a href="#cb9-49" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">'black'</span>, width<span class="op">=</span><span class="dv">1</span>),</span>
-<span id="cb9-50"><a href="#cb9-50" aria-hidden="true" tabindex="-1"></a>    showlegend<span class="op">=</span><span class="va">False</span>,</span>
-<span id="cb9-51"><a href="#cb9-51" aria-hidden="true" tabindex="-1"></a>    hoverinfo<span class="op">=</span><span class="st">'skip'</span></span>
-<span id="cb9-52"><a href="#cb9-52" aria-hidden="true" tabindex="-1"></a>))</span>
-<span id="cb9-53"><a href="#cb9-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-54"><a href="#cb9-54" aria-hidden="true" tabindex="-1"></a><span class="co"># La fonction « update_layout&nbsp;» sert à mettre à jor le graphique avec</span></span>
-<span id="cb9-55"><a href="#cb9-55" aria-hidden="true" tabindex="-1"></a><span class="co"># des détails et paramètres importonts: titre affiché sur la ligne de</span></span>
-<span id="cb9-56"><a href="#cb9-56" aria-hidden="true" tabindex="-1"></a><span class="co"># temps, hauteur et largeur du graphique, taille de police, couleur de</span></span>
-<span id="cb9-57"><a href="#cb9-57" aria-hidden="true" tabindex="-1"></a><span class="co"># fond, etc.  </span></span>
-<span id="cb9-58"><a href="#cb9-58" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
-<span id="cb9-59"><a href="#cb9-59" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="bu">dict</span>(</span>
-<span id="cb9-60"><a href="#cb9-60" aria-hidden="true" tabindex="-1"></a>        text<span class="op">=</span><span class="st">"Chronologie de quelques événements marquants en IA conversationnelle"</span>,</span>
-<span id="cb9-61"><a href="#cb9-61" aria-hidden="true" tabindex="-1"></a>        font<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">20</span>) </span>
-<span id="cb9-62"><a href="#cb9-62" aria-hidden="true" tabindex="-1"></a>    ),</span>
-<span id="cb9-63"><a href="#cb9-63" aria-hidden="true" tabindex="-1"></a>    width<span class="op">=</span><span class="dv">1000</span>,</span>
-<span id="cb9-64"><a href="#cb9-64" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">800</span>,</span>
-<span id="cb9-65"><a href="#cb9-65" aria-hidden="true" tabindex="-1"></a>    plot_bgcolor<span class="op">=</span><span class="st">'white'</span>,</span>
-<span id="cb9-66"><a href="#cb9-66" aria-hidden="true" tabindex="-1"></a>    xaxis<span class="op">=</span><span class="bu">dict</span>(</span>
-<span id="cb9-67"><a href="#cb9-67" aria-hidden="true" tabindex="-1"></a>        showgrid<span class="op">=</span><span class="va">False</span>,</span>
-<span id="cb9-68"><a href="#cb9-68" aria-hidden="true" tabindex="-1"></a>        zeroline<span class="op">=</span><span class="va">False</span>,</span>
-<span id="cb9-69"><a href="#cb9-69" aria-hidden="true" tabindex="-1"></a>        showticklabels<span class="op">=</span><span class="va">False</span>,</span>
-<span id="cb9-70"><a href="#cb9-70" aria-hidden="true" tabindex="-1"></a>        <span class="bu">range</span><span class="op">=</span>[<span class="op">-</span><span class="dv">3</span>, <span class="dv">3</span>]</span>
-<span id="cb9-71"><a href="#cb9-71" aria-hidden="true" tabindex="-1"></a>    ),</span>
-<span id="cb9-72"><a href="#cb9-72" aria-hidden="true" tabindex="-1"></a>    yaxis<span class="op">=</span><span class="bu">dict</span>(</span>
-<span id="cb9-73"><a href="#cb9-73" aria-hidden="true" tabindex="-1"></a>        title<span class="op">=</span><span class="st">"Date"</span>,</span>
-<span id="cb9-74"><a href="#cb9-74" aria-hidden="true" tabindex="-1"></a>        title_font<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">16</span>),</span>
-<span id="cb9-75"><a href="#cb9-75" aria-hidden="true" tabindex="-1"></a>        tickfont<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">14</span>),</span>
-<span id="cb9-76"><a href="#cb9-76" aria-hidden="true" tabindex="-1"></a>        showgrid<span class="op">=</span><span class="va">True</span>,</span>
-<span id="cb9-77"><a href="#cb9-77" aria-hidden="true" tabindex="-1"></a>        gridwidth<span class="op">=</span><span class="dv">1</span>,</span>
-<span id="cb9-78"><a href="#cb9-78" aria-hidden="true" tabindex="-1"></a>        gridcolor<span class="op">=</span><span class="st">'LightGray'</span>,</span>
-<span id="cb9-79"><a href="#cb9-79" aria-hidden="true" tabindex="-1"></a>        autorange<span class="op">=</span><span class="st">"reversed"</span></span>
-<span id="cb9-80"><a href="#cb9-80" aria-hidden="true" tabindex="-1"></a>    ),</span>
-<span id="cb9-81"><a href="#cb9-81" aria-hidden="true" tabindex="-1"></a>    hoverlabel<span class="op">=</span><span class="bu">dict</span>(</span>
-<span id="cb9-82"><a href="#cb9-82" aria-hidden="true" tabindex="-1"></a>        font_size<span class="op">=</span><span class="dv">14</span>, <span class="co"># taille de police sur les étiquettes flottantes: 14px</span></span>
-<span id="cb9-83"><a href="#cb9-83" aria-hidden="true" tabindex="-1"></a>    ),</span>
-<span id="cb9-84"><a href="#cb9-84" aria-hidden="true" tabindex="-1"></a>    hovermode<span class="op">=</span><span class="st">'closest'</span>,</span>
-<span id="cb9-85"><a href="#cb9-85" aria-hidden="true" tabindex="-1"></a>    hoverdistance<span class="op">=</span><span class="dv">100</span>,</span>
-<span id="cb9-86"><a href="#cb9-86" aria-hidden="true" tabindex="-1"></a>    clickmode<span class="op">=</span><span class="st">'event+select'</span>,  <span class="co"># Est supposé rendre le flottement de l'étiquette persistant jusqu'au prochain clic, mais l'interaction est limitée. voir la documentation</span></span>
-<span id="cb9-87"><a href="#cb9-87" aria-hidden="true" tabindex="-1"></a>    uirevision<span class="op">=</span><span class="va">True</span> </span>
-<span id="cb9-88"><a href="#cb9-88" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb9-89"><a href="#cb9-89" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-90"><a href="#cb9-90" aria-hidden="true" tabindex="-1"></a><span class="co"># N'oublions pas d'afficher le graphique</span></span>
-<span id="cb9-91"><a href="#cb9-91" aria-hidden="true" tabindex="-1"></a><span class="co"># fig.show()</span></span>
-<span id="cb9-92"><a href="#cb9-92" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-93"><a href="#cb9-93" aria-hidden="true" tabindex="-1"></a><span class="co"># After creating your figure</span></span>
-<span id="cb9-94"><a href="#cb9-94" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> HTML</span>
-<span id="cb9-95"><a href="#cb9-95" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-96"><a href="#cb9-96" aria-hidden="true" tabindex="-1"></a><span class="co"># Export the figure to an HTML file with all required resources</span></span>
-<span id="cb9-97"><a href="#cb9-97" aria-hidden="true" tabindex="-1"></a>html_string <span class="op">=</span> fig.to_html(include_plotlyjs<span class="op">=</span><span class="st">'cdn'</span>, full_html<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb9-98"><a href="#cb9-98" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-99"><a href="#cb9-99" aria-hidden="true" tabindex="-1"></a><span class="co"># Write to file</span></span>
-<span id="cb9-100"><a href="#cb9-100" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'timeline_visualization.html'</span>, <span class="st">'w'</span>) <span class="im">as</span> f:</span>
-<span id="cb9-101"><a href="#cb9-101" aria-hidden="true" tabindex="-1"></a>    f.write(html_string)</span>
-<span id="cb9-102"><a href="#cb9-102" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-103"><a href="#cb9-103" aria-hidden="true" tabindex="-1"></a><span class="co"># You can also display it directly in the notebook</span></span>
-<span id="cb9-104"><a href="#cb9-104" aria-hidden="true" tabindex="-1"></a>HTML(html_string)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-26" class="cell" data-execution_count="127">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># La ligne suivante trie des données chronologiquement par date, et</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># assigne ce résultat à nouveau à la variable « data ». </span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> data.sort_values(<span class="st">'Début'</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Enrobons (wrap) le texte des événements afin que la longueur de chaque ligne ne</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co"># dépasse pas </span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co"># plus de 30 caractères.  Nous utilisons la méthode pandas « apply »</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co"># avec une fonction anonyme (lambda), c'est-à-dire une fonction sans nom</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="co"># qui n'a pas besoin d'être invoquée pour être exécutée.</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'Événement'</span>] <span class="op">=</span> data[<span class="st">'Événement'</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> x: <span class="st">'&lt;br&gt;'</span>.join(wrap(x, width<span class="op">=</span><span class="dv">30</span>)))</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Création des positions alternées pour les textes</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="co"># De cette manière, les étiquettes ne se chevaucheront pas leurs dates</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="co"># sont chronologiquement proches.</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>positions <span class="op">=</span> [<span class="st">'middle right'</span>, <span class="st">'middle left'</span>] <span class="op">*</span> (<span class="bu">len</span>(data) <span class="op">//</span> <span class="dv">2</span> <span class="op">+</span> <span class="dv">1</span>)</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>positions <span class="op">=</span> positions[:<span class="bu">len</span>(data)]</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Position opposée pour le hover (si le texte est à droite, le hover sera à gauche et vice versa)</span></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>hover_alignments <span class="op">=</span> [<span class="st">'left'</span> <span class="cf">if</span> pos <span class="op">==</span> <span class="st">'middle right'</span> <span class="cf">else</span> <span class="st">'right'</span> <span class="cf">for</span> pos <span class="kw">in</span> positions]</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Créons le graphique avec la fonction Plotly « Figure » </span></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> go.Figure()</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Ajoutons des points et des étiquettes et ajoutons leurs paramètres</span></span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a><span class="co"># pour les afficher adéquatement.</span></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, row <span class="kw">in</span> <span class="bu">enumerate</span>(data.itertuples()):</span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>    fig.add_trace(go.Scatter(</span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>        y<span class="op">=</span>[row.Début],</span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span>[<span class="dv">0</span>],</span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>        mode<span class="op">=</span><span class="st">'markers+text'</span>,</span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>        marker<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">12</span>, symbol<span class="op">=</span><span class="st">'circle'</span>),</span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>        text<span class="op">=</span>[row.Événement],</span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>        textposition<span class="op">=</span>positions[i],</span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>        textfont<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">14</span>),</span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>        showlegend<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>        hovertemplate<span class="op">=</span><span class="st">"%</span><span class="sc">{customdata}</span><span class="st">&lt;br&gt;&lt;b&gt;%{y|%Y}&lt;/b&gt;&lt;extra&gt;&lt;/extra&gt;"</span>,</span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>        customdata<span class="op">=</span>[row.Détails],</span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>        hoverlabel<span class="op">=</span><span class="bu">dict</span>(</span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a>            bgcolor<span class="op">=</span><span class="st">'rgba(0,0,0,0.8)'</span>,</span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>            align<span class="op">=</span>hover_alignments[i], <span class="co"># Position alternée du hover</span></span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>    ))</span>
+<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a><span class="co"># Traçons la ligne verticale sur laquelle tous les événements seront disposés.</span></span>
+<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a>fig.add_trace(go.Scatter(</span>
+<span id="cb8-46"><a href="#cb8-46" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span>[data[<span class="st">'Début'</span>].<span class="bu">min</span>(), data[<span class="st">'Début'</span>].<span class="bu">max</span>()],</span>
+<span id="cb8-47"><a href="#cb8-47" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>[<span class="dv">0</span>, <span class="dv">0</span>],</span>
+<span id="cb8-48"><a href="#cb8-48" aria-hidden="true" tabindex="-1"></a>    mode<span class="op">=</span><span class="st">'lines'</span>,</span>
+<span id="cb8-49"><a href="#cb8-49" aria-hidden="true" tabindex="-1"></a>    line<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">'black'</span>, width<span class="op">=</span><span class="dv">1</span>),</span>
+<span id="cb8-50"><a href="#cb8-50" aria-hidden="true" tabindex="-1"></a>    showlegend<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb8-51"><a href="#cb8-51" aria-hidden="true" tabindex="-1"></a>    hoverinfo<span class="op">=</span><span class="st">'skip'</span></span>
+<span id="cb8-52"><a href="#cb8-52" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb8-53"><a href="#cb8-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-54"><a href="#cb8-54" aria-hidden="true" tabindex="-1"></a><span class="co"># La fonction « update_layout&nbsp;» sert à mettre à jor le graphique avec</span></span>
+<span id="cb8-55"><a href="#cb8-55" aria-hidden="true" tabindex="-1"></a><span class="co"># des détails et paramètres importonts: titre affiché sur la ligne de</span></span>
+<span id="cb8-56"><a href="#cb8-56" aria-hidden="true" tabindex="-1"></a><span class="co"># temps, hauteur et largeur du graphique, taille de police, couleur de</span></span>
+<span id="cb8-57"><a href="#cb8-57" aria-hidden="true" tabindex="-1"></a><span class="co"># fond, etc.  </span></span>
+<span id="cb8-58"><a href="#cb8-58" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb8-59"><a href="#cb8-59" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="bu">dict</span>(</span>
+<span id="cb8-60"><a href="#cb8-60" aria-hidden="true" tabindex="-1"></a>        text<span class="op">=</span><span class="st">"Chronologie de quelques événements marquants en IA conversationnelle"</span>,</span>
+<span id="cb8-61"><a href="#cb8-61" aria-hidden="true" tabindex="-1"></a>        font<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">20</span>) </span>
+<span id="cb8-62"><a href="#cb8-62" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb8-63"><a href="#cb8-63" aria-hidden="true" tabindex="-1"></a>    width<span class="op">=</span><span class="dv">1000</span>,</span>
+<span id="cb8-64"><a href="#cb8-64" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">800</span>,</span>
+<span id="cb8-65"><a href="#cb8-65" aria-hidden="true" tabindex="-1"></a>    plot_bgcolor<span class="op">=</span><span class="st">'white'</span>,</span>
+<span id="cb8-66"><a href="#cb8-66" aria-hidden="true" tabindex="-1"></a>    xaxis<span class="op">=</span><span class="bu">dict</span>(</span>
+<span id="cb8-67"><a href="#cb8-67" aria-hidden="true" tabindex="-1"></a>        showgrid<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb8-68"><a href="#cb8-68" aria-hidden="true" tabindex="-1"></a>        zeroline<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb8-69"><a href="#cb8-69" aria-hidden="true" tabindex="-1"></a>        showticklabels<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb8-70"><a href="#cb8-70" aria-hidden="true" tabindex="-1"></a>        <span class="bu">range</span><span class="op">=</span>[<span class="op">-</span><span class="dv">3</span>, <span class="dv">3</span>]</span>
+<span id="cb8-71"><a href="#cb8-71" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb8-72"><a href="#cb8-72" aria-hidden="true" tabindex="-1"></a>    yaxis<span class="op">=</span><span class="bu">dict</span>(</span>
+<span id="cb8-73"><a href="#cb8-73" aria-hidden="true" tabindex="-1"></a>        title<span class="op">=</span><span class="st">"Date"</span>,</span>
+<span id="cb8-74"><a href="#cb8-74" aria-hidden="true" tabindex="-1"></a>        title_font<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">16</span>),</span>
+<span id="cb8-75"><a href="#cb8-75" aria-hidden="true" tabindex="-1"></a>        tickfont<span class="op">=</span><span class="bu">dict</span>(size<span class="op">=</span><span class="dv">14</span>),</span>
+<span id="cb8-76"><a href="#cb8-76" aria-hidden="true" tabindex="-1"></a>        showgrid<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb8-77"><a href="#cb8-77" aria-hidden="true" tabindex="-1"></a>        gridwidth<span class="op">=</span><span class="dv">1</span>,</span>
+<span id="cb8-78"><a href="#cb8-78" aria-hidden="true" tabindex="-1"></a>        gridcolor<span class="op">=</span><span class="st">'LightGray'</span>,</span>
+<span id="cb8-79"><a href="#cb8-79" aria-hidden="true" tabindex="-1"></a>        autorange<span class="op">=</span><span class="st">"reversed"</span></span>
+<span id="cb8-80"><a href="#cb8-80" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb8-81"><a href="#cb8-81" aria-hidden="true" tabindex="-1"></a>    hoverlabel<span class="op">=</span><span class="bu">dict</span>(</span>
+<span id="cb8-82"><a href="#cb8-82" aria-hidden="true" tabindex="-1"></a>        font_size<span class="op">=</span><span class="dv">14</span>, <span class="co"># taille de police sur les étiquettes flottantes: 14px</span></span>
+<span id="cb8-83"><a href="#cb8-83" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb8-84"><a href="#cb8-84" aria-hidden="true" tabindex="-1"></a>    hovermode<span class="op">=</span><span class="st">'closest'</span>,</span>
+<span id="cb8-85"><a href="#cb8-85" aria-hidden="true" tabindex="-1"></a>    hoverdistance<span class="op">=</span><span class="dv">100</span>,</span>
+<span id="cb8-86"><a href="#cb8-86" aria-hidden="true" tabindex="-1"></a>    clickmode<span class="op">=</span><span class="st">'event+select'</span>,  <span class="co"># Est supposé rendre le flottement de l'étiquette persistant jusqu'au prochain clic, mais l'interaction est limitée. voir la documentation</span></span>
+<span id="cb8-87"><a href="#cb8-87" aria-hidden="true" tabindex="-1"></a>    uirevision<span class="op">=</span><span class="va">True</span> </span>
+<span id="cb8-88"><a href="#cb8-88" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-89"><a href="#cb8-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-90"><a href="#cb8-90" aria-hidden="true" tabindex="-1"></a><span class="co"># N'oublions pas d'afficher le graphique</span></span>
+<span id="cb8-91"><a href="#cb8-91" aria-hidden="true" tabindex="-1"></a><span class="co"># fig.show()</span></span>
+<span id="cb8-92"><a href="#cb8-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-93"><a href="#cb8-93" aria-hidden="true" tabindex="-1"></a><span class="co"># After creating your figure</span></span>
+<span id="cb8-94"><a href="#cb8-94" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> HTML</span>
+<span id="cb8-95"><a href="#cb8-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-96"><a href="#cb8-96" aria-hidden="true" tabindex="-1"></a><span class="co"># Export the figure to an HTML file with all required resources</span></span>
+<span id="cb8-97"><a href="#cb8-97" aria-hidden="true" tabindex="-1"></a>html_string <span class="op">=</span> fig.to_html(include_plotlyjs<span class="op">=</span><span class="st">'cdn'</span>, full_html<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb8-98"><a href="#cb8-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-99"><a href="#cb8-99" aria-hidden="true" tabindex="-1"></a><span class="co"># Write to file</span></span>
+<span id="cb8-100"><a href="#cb8-100" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'timeline_visualization.html'</span>, <span class="st">'w'</span>) <span class="im">as</span> f:</span>
+<span id="cb8-101"><a href="#cb8-101" aria-hidden="true" tabindex="-1"></a>    f.write(html_string)</span>
+<span id="cb8-102"><a href="#cb8-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-103"><a href="#cb8-103" aria-hidden="true" tabindex="-1"></a><span class="co"># You can also display it directly in the notebook</span></span>
+<span id="cb8-104"><a href="#cb8-104" aria-hidden="true" tabindex="-1"></a>HTML(html_string)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="127">
 <div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
         <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.0.1.min.js"></script>                <div id="436f58dc-9d46-40d6-8e76-427150cb6e0b" class="plotly-graph-div" style="height:800px; width:1000px;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("436f58dc-9d46-40d6-8e76-427150cb6e0b")) {                    Plotly.newPlot(                        "436f58dc-9d46-40d6-8e76-427150cb6e0b",                        [{"customdata":["Publication de 'Computing Machinery and Intelligence'.\u003cbr\u003e\u003ca style='color: #00ffff;' href='https:\u002f\u002fdoi.org\u002f10.1093\u002fmind\u002fLIX.236.433'\u003e\u2192 Consulter l'article original\u003c\u002fa\u003e"],"hoverlabel":{"align":"left","bgcolor":"rgba(0,0,0,0.8)"},"hovertemplate":"%{customdata}\u003cbr\u003e\u003cb\u003e%{y|%Y}\u003c\u002fb\u003e\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"size":12,"symbol":"circle"},"mode":"markers+text","showlegend":false,"text":["Turing traite du \u00abjeu\u003cbr\u003ed'imitation\u00bb"],"textfont":{"size":14},"textposition":"middle right","x":[0],"y":["1950-01-01T00:00:00"],"type":"scatter"},{"customdata":["Premier chatbot simulant un psychoth\u00e9rapeute.\u003cbr\u003e\u003ca style='color: #00ffff;' href='https:\u002f\u002fdoi.org\u002f10.48550\u002farXiv.2402.05122'\u003e\u2192 Article sur l'histoire des \u003ci\u003echatbots\u003c\u002fi\u003e traitant entre autres d'ELIZA.\u003c\u002fa\u003e"],"hoverlabel":{"align":"right","bgcolor":"rgba(0,0,0,0.8)"},"hovertemplate":"%{customdata}\u003cbr\u003e\u003cb\u003e%{y|%Y}\u003c\u002fb\u003e\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"size":12,"symbol":"circle"},"mode":"markers+text","showlegend":false,"text":["Joseph Weizenbaum lance le\u003cbr\u003eprogramme ELIZA"],"textfont":{"size":14},"textposition":"middle left","x":[0],"y":["1966-01-01T00:00:00"],"type":"scatter"},{"customdata":["Chatbot simulant un patient parano\u00efaque, cr\u00e9\u00e9 par Kenneth Colby.\u003cbr\u003e\u003ca style='color: #00ffff;' href='https:\u002f\u002fstm.cairn.info\u002frevue-l-information-psychiatrique-2017-1-page-51'\u003e\u2192 Article de Xavier Aim\u00e9 sur ELIZA et Parry\u003c\u002fa\u003e"],"hoverlabel":{"align":"left","bgcolor":"rgba(0,0,0,0.8)"},"hovertemplate":"%{customdata}\u003cbr\u003e\u003cb\u003e%{y|%Y}\u003c\u002fb\u003e\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"size":12,"symbol":"circle"},"mode":"markers+text","showlegend":false,"text":["Lancement du robot\u003cbr\u003econversationnel Parry"],"textfont":{"size":14},"textposition":"middle right","x":[0],"y":["1972-01-01T00:00:00"],"type":"scatter"},{"customdata":["Article fondateur sur l'architecture des transformeurs par Vaswani et al.\u003cbr\u003e\u003ca style='color: #00ffff;text-align:left;' href='https:\u002f\u002fdoi.org\u002f10.48550\u002farXiv.1706.03762'\u003e\u2192 Lire l'article original\u003c\u002fa\u003e"],"hoverlabel":{"align":"right","bgcolor":"rgba(0,0,0,0.8)"},"hovertemplate":"%{customdata}\u003cbr\u003e\u003cb\u003e%{y|%Y}\u003c\u002fb\u003e\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"size":12,"symbol":"circle"},"mode":"markers+text","showlegend":false,"text":["Publication de l'article\u003cbr\u003e'Attention is all you need'"],"textfont":{"size":14},"textposition":"middle left","x":[0],"y":["2017-01-01T00:00:00"],"type":"scatter"},{"customdata":["Un premier patient re\u00e7oit un implant c\u00e9r\u00e9bral Neuralink.\u003cbr\u003e\u003ca style='color: #00ffff;' href='https:\u002f\u002fwww.reuters.com\u002ftechnology\u002fneuralink-implants-brain-chip-first-human-musk-says-2024-01-29\u002f'\u003e\u2192 Lien vers l'article de l'agence Reuters\u003c\u002fa\u003e"],"hoverlabel":{"align":"left","bgcolor":"rgba(0,0,0,0.8)"},"hovertemplate":"%{customdata}\u003cbr\u003e\u003cb\u003e%{y|%Y}\u003c\u002fb\u003e\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"size":12,"symbol":"circle"},"mode":"markers+text","showlegend":false,"text":["Annonce de l'implantation\u003cbr\u003ed'une puce Neuralink dans un\u003cbr\u003ecerveau humain"],"textfont":{"size":14},"textposition":"middle right","x":[0],"y":["2024-01-01T00:00:00"],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"black","width":1},"mode":"lines","showlegend":false,"x":[0,0],"y":["1950-01-01T00:00:00","2024-01-01T00:00:00"],"type":"scatter"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"title":{"font":{"size":20},"text":"Chronologie de quelques \u00e9v\u00e9nements marquants en IA conversationnelle"},"xaxis":{"showgrid":false,"zeroline":false,"showticklabels":false,"range":[-3,3]},"yaxis":{"title":{"text":"Date","font":{"size":16}},"tickfont":{"size":14},"showgrid":true,"gridwidth":1,"gridcolor":"LightGray","autorange":"reversed"},"hoverlabel":{"font":{"size":14}},"width":1000,"height":800,"plot_bgcolor":"white","hovermode":"closest","hoverdistance":100,"clickmode":"event+select","uirevision":true},                        {"responsive": true}                    )                };            </script>        </div>
