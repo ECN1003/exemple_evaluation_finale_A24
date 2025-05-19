@@ -24,3 +24,8 @@
 .jp-MarkdownOutput p {
     line-height: 1.5 !important;
 }
+
+.input_area {
+  max-height: 300px !important;
+  overflow-y: auto !important;
+}
