@@ -24,6 +24,8 @@
 
 .jp-MarkdownOutput p {
     line-height: 1.5 !important;
+    font-size: 1.3rem!important;
+    background-color: blueviolet !important;
 }
 
 .input_area {
