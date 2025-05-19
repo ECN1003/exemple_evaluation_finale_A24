@@ -30,3 +30,7 @@
   max-height: 300px !important;
   overflow-y: auto !important;
 }
+
+h2 {
+    background-color: blueviolet;
+}
